@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midnight Quetzal - Paquetes Turísticos</title>
+    <!-- Incluye el CDN de Tailwind CSS para un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Definir la fuente Inter para un estilo limpio y profesional */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Para un desplazamiento suave al hacer clic en los enlaces */
+        }
+        /* Estilos personalizados para el fondo del banner y los botones */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/0f172a/FFF?text=Guatemala');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Estilos para el efecto de sombra y transformación en los botones */
+        .btn-whatsapp {
+            transition: all 0.2s ease-in-out;
+            transform: translateY(0);
+        }
+        .btn-whatsapp:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Barra de navegación fija en la parte superior -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900">Midnight Quetzal</a>
+            <a href="https://wa.me/50249425445" target="_blank" class="px-4 py-2 bg-green-500 text-white rounded-xl shadow-lg hover:bg-green-600 transition-colors duration-300">
+                Contactar por WhatsApp
+            </a>
+        </nav>
+    </header>
+
+    <!-- Sección principal de bienvenida (Hero) -->
+    <main>
+        <section id="hero" class="hero-bg text-white py-24 md:py-36 text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">
+                    El Corazón del Mundo Maya te Espera
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 font-light drop-shadow-md">
+                    Descubre la magia de Guatemala con nuestros paquetes turísticos a la medida.
+                </p>
+                <a href="#paquetes" class="inline-block px-8 py-4 bg-yellow-500 text-gray-900 text-lg font-semibold rounded-xl shadow-xl hover:bg-yellow-400 transition-transform transform hover:scale-105">
+                    Ver Paquetes
+                </a>
+            </div>
+        </section>
+
+        <!-- Sección de paquetes turísticos -->
+        <section id="paquetes" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Nuestros Paquetes</h2>
+
+                <!-- Contenedor para las tarjetas de paquetes -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Tarjeta del Paquete Económico -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <h3 class="text-2xl font-bold text-green-700 mb-2">Paquete Sanate Económico</h3>
+                        <p class="text-lg text-gray-600 mb-4">Explorando Petén a tu Ritmo</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Hospedaje económico, transporte compartido y tours en grupo para una aventura accesible.
+                        </p>
+                        <span class="text-3xl font-extrabold text-blue-600 mb-4">Q4,284 - Q4,716</span>
+                        <a href="https://wa.me/50249425445?text=¡Hola!%20Me%20interesa%20el%20Paquete%20Sanate%20Económico.%20Me%20gustaría%20recibir%20más%20información." target="_blank"
+                           class="btn-whatsapp px-6 py-3 w-full bg-green-500 text-white rounded-xl shadow-md font-semibold hover:bg-green-600 mb-2">
+                            Reservar por WhatsApp
+                        </a>
+                        <a href="#sanate-details" class="text-blue-500 hover:underline">Ver itinerario completo</a>
+                    </div>
+                    
+                    <!-- Tarjeta del Paquete Premium -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center">
+                        <h3 class="text-2xl font-bold text-green-700 mb-2">Paquete Quetzal Premium</h3>
+                        <p class="text-lg text-gray-600 mb-4">El Corazón del Mundo Maya</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Una experiencia exclusiva y de lujo con vuelos, guías privados, transporte VIP y un tour en helicóptero.
+                        </p>
+                        <span class="text-3xl font-extrabold text-blue-600 mb-4">Q31,068 - Q34,668</span>
+                        <a href="https://wa.me/50249425445?text=¡Hola!%20Me%20interesa%20el%20Paquete%20Quetzal%20Premium.%20Me%20gustaría%20recibir%20más%20información." target="_blank"
+                           class="btn-whatsapp px-6 py-3 w-full bg-green-500 text-white rounded-xl shadow-md font-semibold hover:bg-green-600 mb-2">
+                            Reservar por WhatsApp
+                        </a>
+                        <a href="#quetzal-details" class="text-blue-500 hover:underline">Ver itinerario completo</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de detalles del Paquete Económico -->
+        <section id="sanate-details" class="bg-gray-100 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold mb-8 text-center">Itinerario: Paquete Sanate Económico</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Día 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 1 – Viaje y llegada a Flores</h4>
+                        <p class="text-gray-700">Salida en autobús nocturno desde Ciudad de Guatemala. Llegada, check-in en hostal y paseo por la Isla de Flores.</p>
+                    </div>
+                    <!-- Día 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 2 – Tikal (Tour grupal)</h4>
+                        <p class="text-gray-700">Tour grupal a Tikal. Recorrido guiado, desayuno y almuerzo en el parque. Regreso al hostal por la tarde.</p>
+                    </div>
+                    <!-- Día 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 3 – Lago Petén Itzá y Ceibal</h4>
+                        <p class="text-gray-700">Traslado en coaster a Sayaxché para un tour grupal por Ceibal. Tarde libre en el Lago Petén Itzá.</p>
+                    </div>
+                    <!-- Día 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 4 – Atardecer en Yaxhá</h4>
+                        <p class="text-gray-700">Mañana libre. Por la tarde, tour grupal a Yaxhá para ver el atardecer desde el Templo 216.</p>
+                    </div>
+                    <!-- Día 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 5 – El Remate y Biotopo Cerro Cahui</h4>
+                        <p class="text-gray-700">Traslado a El Remate para visitar el Biotopo Cerro Cahui. Tarde libre para disfrutar del ambiente local.</p>
+                    </div>
+                    <!-- Día 6 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 6 – Cuevas y Kayak</h4>
+                        <p class="text-gray-700">Visita a la Cueva de Actún Kan. Por la tarde, alquiler de kayak o bicicleta para explorar la zona.</p>
+                    </div>
+                    <!-- Día 7 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 7 – Despedida de Petén</h4>
+                        <p class="text-gray-700">Paseo matutino por la isla de Flores y luego regreso en autobús económico a Ciudad de Guatemala.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de detalles del Paquete Premium -->
+        <section id="quetzal-details" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold mb-8 text-center">Itinerario: Paquete Quetzal Premium</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Día 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 1 – Bienvenida a Petén</h4>
+                        <p class="text-gray-700">Vuelo desde Ciudad de Guatemala. Recepción por guía privado, check-in en hotel de lujo y paseo en lancha privada por el Lago Petén Itzá.</p>
+                    </div>
+                    <!-- Día 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 2 – Amanecer en Tikal</h4>
+                        <p class="text-gray-700">Salida muy temprano para ver el amanecer desde el Templo IV en Tikal. Desayuno gourmet en el sitio y recorrido privado.</p>
+                    </div>
+                    <!-- Día 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 3 – El Mirador en helicóptero</h4>
+                        <p class="text-gray-700">Vuelo panorámico en helicóptero a El Mirador. Recorrido privado con picnic gourmet y tarde libre en el hotel.</p>
+                    </div>
+                    <!-- Día 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 4 – Yaxhá y Topoxté al atardecer</h4>
+                        <p class="text-gray-700">Mañana libre. Por la tarde, recorrido privado por Yaxhá y Topoxté para ver el atardecer desde el Templo 216.</p>
+                    </div>
+                    <!-- Día 5 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 5 – Ceibal y Río La Pasión</h4>
+                        <p class="text-gray-700">Salida hacia Sayaxché para un traslado en lancha privada al sitio de Ceibal. Exploración del sitio y almuerzo picnic a orillas del río.</p>
+                    </div>
+                    <!-- Día 6 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 6 – Isla de Flores y Cueva de Actún Can</h4>
+                        <p class="text-gray-700">Recorrido a pie por la pintoresca Isla de Flores. Por la tarde, una aventura guiada en la Cueva de Actún Can.</p>
+                    </div>
+                    <!-- Día 7 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-semibold mb-2 text-green-700">Día 7 – Regreso</h4>
+                        <p class="text-gray-700">Tiempo libre para compras de recuerdos y traslado privado al aeropuerto para el vuelo de regreso a Ciudad de Guatemala.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Midnight Quetzal. Todos los derechos reservados.</p>
+            <p class="mt-2 text-gray-400">Diseñado con amor en Guatemala.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
